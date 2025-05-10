@@ -9486,6 +9486,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxMultiplier: 0.5
+--- !u!1 &900009898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900009899}
+  - component: {fileID: 900009900}
+  m_Layer: 0
+  m_Name: CurseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900009899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900009898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.800226, y: 1.5988977, z: 0.040138677}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900009900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900009898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161e6af0eaabf864fa4fca233b3fdf39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1089649821}
+  curseEffect: {fileID: 0}
+  curseIntervalRange: {x: 5, y: 10}
+  curseDurationRange: {x: 4, y: 8}
 --- !u!1 &905250294
 GameObject:
   m_ObjectHideFlags: 0
@@ -9919,7 +9967,7 @@ Transform:
   m_GameObject: {fileID: 1089649815}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.56, y: -2.47, z: 0}
+  m_LocalPosition: {x: -6.56, y: -2.494, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9957,8 +10005,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003061533, y: -0.04899156}
-  m_Size: {x: 0.6509347, y: 0.93876004}
+  m_Offset: {x: 0.003061533, y: -0.035197616}
+  m_Size: {x: 0.6509347, y: 0.91117215}
   m_Direction: 0
 --- !u!50 &1089649820
 Rigidbody2D:
@@ -10000,7 +10048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  jumpForce: 5
+  jumpForce: 6
   airControlMultiplier: 1
   maxFallSpeed: -10
   canMove: 1
@@ -10169,3 +10217,4 @@ SceneRoots:
   - {fileID: 1089649818}
   - {fileID: 327526357}
   - {fileID: 474388849}
+  - {fileID: 900009899}
